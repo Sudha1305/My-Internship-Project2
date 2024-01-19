@@ -1,0 +1,13 @@
+# prompt the user to enter a sentence or paragraph
+text = input("Please enter a sentence or paragraph: ")
+
+# implement a function that counts the number of words in the input
+def count_words(text):
+  # split the text by whitespace characters
+  words = text.split()
+  # return the length of the list of words
+  return len(words)
+
+# print the word count to the console
+word_count = count_words(text)
+print(f"The word count is {word_count}.")
